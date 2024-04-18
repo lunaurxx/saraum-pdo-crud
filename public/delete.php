@@ -20,6 +20,7 @@ if(isset($_POST["product_id"]) && !empty($_POST["product_id"])){
             header("location: ../index.php");
             exit();
         } else{
+          
             echo "Oops! Something went wrong. Please try again later.";
         }
     }
