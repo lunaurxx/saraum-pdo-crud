@@ -39,6 +39,7 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
+
 INSERT INTO `products` (`product_id`, `product_name`, `product_details`, `product_retail_price`) VALUES
 (4, ' Red Velvet Cake', 'cream cheese frosting.', 5);
 
