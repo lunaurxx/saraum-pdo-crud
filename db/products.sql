@@ -40,7 +40,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_name`, `product_details`, `product_retail_price`) VALUES
-(1, 'Proben', 'Fried chicken proventriculus', 5);
+(4, ' Red Velvet Cake', 'cream cheese frosting.', 5);
 
 --
 -- Indexes for dumped tables
