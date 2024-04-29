@@ -2,9 +2,9 @@
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'saraum_pdo_crud');
+define('DB_NAME', 'u593341949_db_saraum');
+define('DB_USERNAME', 'u593341949_dev_saraum');
+define('DB_PASSWORD', '20212047Saraum');
  
 /* Attempt to connect to MySQL database */
 try{
