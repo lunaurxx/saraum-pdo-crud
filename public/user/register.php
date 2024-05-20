@@ -131,7 +131,7 @@ wrapper {
     font-weight: bold; /* Bold font */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    font-family: "RM Almanac", sans-serif; /* Apply RM Almanac font with a fallback to sans-serif */
+    font-style:italic
 }
 
         
@@ -161,7 +161,7 @@ wrapper {
         }
 
         .btn-primary:hover {
-            background-color: orange; /* Darker blue on hover */
+            background-color: orange; 
         
         }
 
