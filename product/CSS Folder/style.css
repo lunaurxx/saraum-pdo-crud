@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: medium;
+}
+
+.navbar ul li a:hover {
+    color: rgb(17, 17, 16);
+    background-color: #d4b9c2;
+}
+.row{
+   display: flex; 
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+#section1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 20px;
+}
+.col-2{
+    max-width: 600px;
+}
+.col-2 img{
+    max-width: 200%;
+    padding: 100px 0;
+}
+    .container {
+        margin-right: 50px; /* Adjust the value as needed */
+        text-align: left !important; /* Align text to the left within the container */
+    }
+    
+    .container {
+        margin-right: 50px; /* Adjust the value as needed */
+    }
+    
+    .col-2 {
+        float: left;
+    }
+    
+    .col-2 h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+        line-height: 60px;
+        margin: 10px 0;
+        color: #b88d5d;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    
+    .col-2 p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        font-size: 20px;
+        margin: 10px 0;
+        color: #080808;
+        font-family: 'Arial Narrow';
+    }
+    
+    
+
+
+.btn{
+   display: inline-block;
+   background: #996390;; 
+   color: blanchedalmond;
+   padding: 8px 30px;
+   margin: 30px 0;
+   border-radius: 30px;
+  transition:  0.5s;
+}
+.btn :hover{
+    background: #afdae8;
+}
+.col-3{
+   flex-basis: 30%; 
+   min-width: 250px;
+   margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 2000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width:200px;
+    margin-bottom: 50px;
+}
+.col-4 img{
+    width: 100%;
+
+}
+.title{
+   text-align: center;
+   margin: 0 auto 80px;
+   position: relative;
+   line-height: 60px;
+   color: aquamarine;
+}
+.btn {            
+    background-color: #d78125d0;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;            
+    font-size: 16px;
+}
+.add-btn{
+    background-color: #c9a777;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;            
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #b59878d0;
+}
+.buy-btn {           
+    background-color: #d78125d0;
+    color: #010101;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;            
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;           
+    font-size: 16px;
+}
+.buy-btn:hover {
+    background-color: #b59878d0;
+}
+.box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px auto; 
+            width: 80%; 
+            max-width: 600px; 
+            text-align: left; 
+        }
+        label {
+            display: block;
+            margin-bottom: 10px; 
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%; 
+            padding: 10px;
+            margin-bottom: 15px; 
+        }
+        button[type="submit"] {
+            width: 100%; 
+            padding: 10px; 
+            background-color: #a79c7d; 
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049; 
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical; 
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #dec29a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b1a899;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 70;
+            width: 100%;
+            background-color: none; /* Change background color as needed */
+            z-index: 999; /* Ensure navigation bar stays on top of other elements */
+            padding: 1px 0;
+            transition: top 0.3s; /* Add smooth transition effect */
+       
+        }
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+       
+        }
+        .navbar li {
+            display: inline;
+        }
+        .navbar a {
+            color: rgb(8, 8, 8); /* Change link color as needed */
+            text-decoration: none;
+            padding: 5px 15px;
+            font-size: 20px;
+            transition: background-color 0.3s; /* Add smooth transition effect */
+        }
+        .navbar a:hover {
+            background-color: #e8dede; /* Change hover background color as needed */
+        }
+        /* Add padding to the body to make space for fixed navigation */
+        body {
+            padding-top: 40px; /* Adjust as needed depending on the height of your navigation bar */
+        }
+        
+        .small-container h1{
+            font-size: 30px;
+            text-align: center;
+           
+        }.header {
+            font-family: 'Arial', sans-serif; 
+           /* Change 'Arial' to your desired font family */
+        }
+  

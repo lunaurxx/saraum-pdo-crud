@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Product Shop</title>
+<link rel="stylesheet" href="./CSS Folder/logistics.css">
+<link rel="stylesheet" href="./CSS Folder/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<style>
+    body {
+         font-family: 'Bombshell Pro ';
+         background-image: url('./image/background.jpg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;  
+         height: 100vh;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./image/logo.jpg" width="50px">
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>  
+                        <li><a href="Customer.html">SERVICES</a></li>
+                        <li><a href="reports.html">REPORTS</a></li>
+                        <li><a>|</a></li>
+                        <li>
+                            <a href="Logistics.html" class="logistics-icon"><i class="fa fa-truck" aria-hidden="true"></i></a>
+                           <a href="#" class="add-to-cart-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                            
+                        </li> 
+                    </ul>   
+                </nav>  
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<main class="shipment-container">
+    <!-- Sample Shipment -->
+    <div class="shipment">
+        <div class="shipment-header">
+            <span class="shipment-number">Order Number: 3439579575</span>
+            <span class="shipment-status in-transit">Already In Transit</span>
+        </div>
+        <ul class="shipment-items">
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 1</div>
+            </li>
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 2</div>
+            </li>
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 3</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sample Shipment -->
+    <div class="shipment">
+        <div class="shipment-header">
+            <span class="shipment-number">Order Number: 79531739741</span>
+            <span class="shipment-status delivered">Delivered</span>
+        </div>
+        <ul class="shipment-items">
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 4</div>
+            </li>
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 5</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Middle Buttons -->
+    <div class="middle-buttons">
+        <button class="btn-customer-service" onclick="redirectToCustomerService()">Customer Service</button>
+        <button class="btn-reports" onclick="redirectToReports()">Reports</button>
+    </div>
+</main>
+
+
+    <script>
+        function redirectToCustomerService() {
+            // Redirect to customer service page
+            window.location.href = "customer.html";
+        }
+
+        function redirectToReports() {
+            // Redirect to reports page
+            window.location.href = "reports.html";
+        }
+    </script>
+</body>
+</html>
+        
