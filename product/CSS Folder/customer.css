@@ -1,0 +1,119 @@
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 125px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar ul li a:hover {
+    color: blue;
+}
+
+.col-2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.col-2 h1 {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.col-2 p {
+    color: #555;
+}
+
+/* Customer Service Styles */
+.customer-service {
+
+    border-radius: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+    max-width: 700px;
+    position: absolute;
+    right: 50%;
+    top: 15%;
+        
+}
+
+.customer-service h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customer-service p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.h1{
+    text-align: center;
+}
