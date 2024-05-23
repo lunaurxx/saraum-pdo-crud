@@ -102,7 +102,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <style>
           body {
     font-family: Arial, sans-serif;
-    background-image: url('../../media/bg2.jpg');
+    background-image: url('../../media/Neu.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -113,95 +113,81 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     margin: 0;
 }
 
-wrapper {
+.wrapper {
     width: 360px;
     padding: 30px;
     border-radius: 20px;
-    background-image: url('../../media/bg2.jpg'); /* Background image */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
     background-size: cover;
     background-position: center;
+    background-blend-mode: overlay; /* Blends the color with the background image */
 }
 
-
-
-.wrapper h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white; /* Hard black text */
-    font-weight: bold; /* Bold font */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    font-style:italic
-}
-
-        
-
-        .form-group {
+.wrapper h1 {
             margin-bottom: 20px;
-        }
-
-        label {
-            color: white; /* Hard black text */
+            color:#cb997e;
             font-weight: bold; /* Bold font */
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            font-family: "Arial Narrow";
+            text-decoration: #cb997e;
         }
 
-        .form-control {
+.form-group {
+    margin-bottom: 20px;
+}
 
+label {
+    color: black; /* Hard black text */
+    font-weight: bold; /* Bold font */}
+
+.form-control {
     font-weight: bold; /* Bold font */
     border-radius: 10px; /* Adjust the border radius as needed */
     background-color: rgba(255, 255, 255, 0.7); /* Opacity color */
 }
 
-
-
-        .btn-primary {
-            background-color: orange; /* Blue button */
-            font-weight: bold; /* Bold font */
-        }
-
-        .btn-primary:hover {
-            background-color: orange; 
-        
-        }
-
-        .alert {
-            margin-top: 20px;
-        }
-        p {
-    font-weight: bold;
-    color: white;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+.btn-primary {
+    background-color: #cb997e;
+    font-weight: bold; /* Bold font */
 }
 
+.btn-primary:hover {
+    background-color: #ddbea9; 
+}
 
-        a {
-             font-weight: bold;
-             color: orange;
-             text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-        } 
-        
+.alert {
+    margin-top: 20px;
+}
 
+p {
+    font-weight: normal;
+    color: black;
+}
+
+a {
+    font-weight: bold;
+    color: #cb997e;
+    text-shadow: -1px 1px 0 black, 1px 1px 0 black;
+} 
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <h2>Sign Up</h2>
+        <h1>Sign Up</h1>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <label></label>
+                <input type="text" name="username" placeholder="Username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+                <label></label>
+                <input type="password" name="password" placeholder="Password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
-                <label>Confirm Password</label>
-                <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
+                <label></label>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">

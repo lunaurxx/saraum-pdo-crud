@@ -95,7 +95,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('./media/client-bg.jpg');
+            background-image: url('./media/Nm.png'); 
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -107,22 +107,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
 
         .wrapper {
-            width: 360px;
-            padding: 30px;
-            border-radius: 20px;
-            background-image: url('./media/client-bg.jpg'); /* Background image */
-            background-size: cover;
-            background-position: center;
-        }
+    width: 360px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; /* Blends the color with the background image */
+}
 
-        .wrapper h2 {
-            text-align: center;
+        .wrapper h1 {
             margin-bottom: 20px;
-            color: white; /* Hard black text */
+            color:#cb997e;
             font-weight: bold; /* Bold font */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-            font-family: "RM Almanac", sans-serif; /* Apply RM Almanac font with a fallback to sans-serif */
+            font-family: "Arial Narrow";
+            text-decoration: #cb997e;
         }
 
         .form-group {
@@ -130,10 +129,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
 
         label {
-            color: white; /* Hard black text */
-            font-weight: bold; /* Bold font */
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-            font-family: "RM Almanac", sans-serif; /* Apply RM Almanac font with a fallback to sans-serif */
+            color: black; /* Hard black text */
+            font-weight: normal;
+            font-family: 'Arial Narrow';
         }
 
         .form-control {
@@ -143,35 +141,51 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
 
         .btn-primary {
-            background-color: orange; /* Blue button */
-            font-weight: bold; /* Bold font */
-        }
+    background-color:  #cb997e;
+    font-weight: bold; /* Bold font */
+    border-radius: 10px; 
+    width: calc(100% - 2px); /* Same width as text fields with padding */
+    text-decoration: black;
+    box-shadow: #cb997e;
+}
 
-        .btn-primary:hover {
-            background-color: darkorange;
-        }
+.btn-primary:hover {
+    background-color:  #ddbea5;
+}
+
 
         .alert {
             margin-top: 20px;
         }
 
         p {
-            font-weight: bold;
-            color: white;
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            color: black;
+            font-family: 'Arial Narrow';
+            font-weight: normal;
+           
         }
 
         a {
-            font-weight: bold;
-            color: orange;
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            text-align: center;
+            margin-bottom: 20px;
+            color:#cb997e;
+            font-weight: bold; /* Bold font */
+            font-family: 'Arial Narrow';
+            text-decoration: #cb997e;
+            
+        }
+        h2 {
+
+ color: black; /* Hard black text */
+            font-weight: normal;
+            font-family: 'Arial Narrow';
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+        <h1>Login</h1>
 
         <?php 
         if(!empty($login_err)){
@@ -179,15 +193,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }        
         ?>
 
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <label></label>
+                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>" placeholder="Username">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                <label></label>
+                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" placeholder="Password">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
