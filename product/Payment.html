@@ -47,37 +47,39 @@ body {
     </div>
     </div>
     <br>
-    <div class="form-container">
-        <h1>Payment & Accounting</h1>
-        <form id="payment-form" action="/submit_payment" method="post">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Secure Payment Form</h2>
+        <form action="../backups/process_payment.php" method="post" onsubmit="return validateForm()">
             <div class="form-group">
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="address">Delivery Address:</label>
-                <input type="text" id="address" name="address" required>
+                <label for="card_number">Card Number:</label><br>
+                <input type="text" id="card_number" name="card_number" placeholder="Enter your card number" required><br>
+                <span class="error" id="card_error"></span> <!-- Error message for card number -->
             </div>
             <div class="form-group">
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" value="1" onchange="updatePrice()" required>
+                <label for="expiry_date">Date payment:</label><br>
+                <input type="date" id="expiry_date" name="expiry_date" style="height: 40px; width: calc(100% - 22px);" required><br>
+                <span class="error" id="expiry_error"></span> <!-- Error message for expiry date -->
             </div>
-            <div class="payment-method-container">
-                <label for="payment-method">Select Payment Method:</label>
-                <select id="payment-method" name="payment-method">
-                    <option value="cash on delivery">Cash on delivery</option>
-                    <option value="mastercard">Mastercard</option>
-                    <option value="paypal">PayPal</option>
-                </select>
+            <div class="form-group">
+                <label for="cvv">CVV:</label><br>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required><br>
+                <span class="error" id="cvv_error"></span> <!-- Error message for CVV -->
             </div>
-            <input type="hidden" id="total-price" name="total-price">
-            <input type="button" value="BUY NOW" onclick="redirectToLogistics()">
+            <div class="form-group">
+                <label for="amount">Amount:</label><br>
+                <input type="text" id="amount" name="amount" placeholder="Enter payment amount" required><br>
+                <span class="error" id="amount_error"></span> <!-- Error message for amount -->
+            </div>
+            <input type="submit" value="Pay Now" class="btn-primary">
+            
+            <button type="button" class="btn-cancel" onclick="cancelPayment()">Cancel</button>
         </form>
     </div>
+    
 
     <script>
         function redirectToLogistics() {
