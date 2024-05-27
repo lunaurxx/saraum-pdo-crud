@@ -354,7 +354,7 @@
         }
 
         document.getElementById('buyButton').addEventListener('click', () => {
-            window.location.href = '../product/payment.html';
+            window.location.href = '../backups/user.php';
         });
         function addToCart(productId, productName, productPrice) {
     if (cart[productId]) {

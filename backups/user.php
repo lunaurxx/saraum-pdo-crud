@@ -74,7 +74,7 @@ body {
                 <span class="error" id="age_error"></span> <!-- Error message for age -->
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="../products/despay.php" class="btn btn-danger ml-2">Cancel</a>
+            <a href="../backups/userinfo.php" class="btn btn-danger ml-2">Cancel</a>
         </form>
     </div>
 
